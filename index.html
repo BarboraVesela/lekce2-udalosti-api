@@ -9,17 +9,38 @@
 </head>
 <body>
 
-	<h1>Změna tříd, události</h1>
+	<p onmouseover="onHover()" class="text">V elipse spí lev</p>
 
-	<div class="ctverecek zluty"></div>
+	<button onclick="zmenBarvu(event)" class="button">Červený po kliknutí</button>
+	<button onclick="zmenVelikost(event)" class="button">Větší po kliknutí</button>
 
-	<div class="ctverecek zeleny"></div>
 
-	<img class="obrazek" src="obrazky/kocka.jpg">
 
-	<button class="tlacitko">Čudlajs</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<br>
+	<br>
+
+	<button onclick="zavolejUdalost(event)" class="tlacitko">Čudlajs 1</button>
+	<button onclick="zavolejUdalost(event)" class="tlacitko">Čudlajs 2</button>
+	<button onclick="zavolejUdalost(event)" class="tlacitko">Čudlajs 3</button>
+
+	<br>
+	<br>
+
+	<button onclick="spustAudio()" class="tlacitko">PLAY</button>
+	<button onclick="zastavAudio()" class="tlacitko">PAUSE</button>
+	<button onclick="resetAudio()" class="tlacitko">RESET</button>
+	<br>
+	
+	<p class = "volume">VOLUME</p>
+	<button onclick="minAudio()" class="tlacitko">0</button>
+	<button onclick="origAudio()" class="tlacitko">0.5</button>
+	<button onclick="vicAudio()" class="tlacitko">1</button>
+
+
+	<audio class = "mujPrehravac" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
